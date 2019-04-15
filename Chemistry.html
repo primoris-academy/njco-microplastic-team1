@@ -56,16 +56,16 @@
       <!-- making tab nav -->
       <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="v-pills-main-tab" data-toggle="tab" href="#v-pills-main" role="tab" aria-controls="v-pills-main" aria-selected="true">Main</a>
+          <a class="nav-link text-truncate active" id="v-pills-main-tab" data-toggle="tab" href="#v-pills-main" role="tab" aria-controls="v-pills-main" aria-selected="true">Main</a>
+        </li>
+        <li class="nav-item w-25">
+          <a class="nav-link text-truncate text-center" id="v-pills-chain-growth-tab" data-toggle="tab" href="#v-pills-chain-growth" role="tab" aria-controls="v-pills-chain-growth" aria-selected="false">Chain-Growth Polymerization</a>
+        </li>
+        <li class="nav-item w-25">
+          <a class="nav-link text-truncate text-center" id="v-pills-step-growth-tab" data-toggle="tab" href="#v-pills-step-growth" role="tab" aria-controls="v-pills-step-growth" aria-selected="false">Step-Growth Polymerization</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="v-pills-chain-growth-tab" data-toggle="tab" href="#v-pills-chain-growth" role="tab" aria-controls="v-pills-chain-growth" aria-selected="false">Chain-Growth Polymerization</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="v-pills-step-growth-tab" data-toggle="tab" href="#v-pills-step-growth" role="tab" aria-controls="v-pills-step-growth" aria-selected="false">Step-Growth Polymerization</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="v-pills-sources-tab" data-toggle="tab" href="#v-pills-sources" role="tab" aria-controls="v-pills-sources" aria-selected="false">Sources</a>
+          <a class="nav-link text-truncate" id="v-pills-sources-tab" data-toggle="tab" href="#v-pills-sources" role="tab" aria-controls="v-pills-sources" aria-selected="false">Sources</a>
         </li>
       </ul>
       <div class="row py-4">
@@ -86,71 +86,119 @@
           <!-- content for "chain-growth" -->
           <div class="tab-pane fade" id="v-pills-chain-growth" role="tabpanel" aria-labelledby="v-pills-chain-growth">
             <h2>Chain-Growth Polymerization</h2>
-            
+
             <p>
               <span class="font-italic font-weight-bold" title="Also known as Addition polymers" data-toggle="tooltip" data-placement="top"> Chain-Growth polymers</span> are created by chain-reaction polymerization in which a reactive intermediate is formed, via an initiator that adds to the carbon-carbon double bond of an unsaturated substrate. This intermediate then reacts with another monomer, and another, and so on, to form a chain. The reaction occurs in three steps: initiation, elongation, and termination.
             </p>
-            
-            <h3><span title="Cationic" data-toggle="tooltip" data-placement="top"> Acid-Catalyzed </span> Polymerization</h3>
-            
-            <p>
-              The initiator is an acid. <br />
-              <span class="font-weight-bold">Initiation</span>: A proton from an acid is added to an alkene in order to form a carbocation <br />
-              <span class="font-weight-bold">Elongation</span>: Another alkene molecule donates an electron group, forming a larger carbocation, and this process continues, resulting in a higher molecular weight carbocation <br />
-              <span class="font-weight-bold">Termination</span>: Occurs with the loss of a proton <br />
 
-              Polymerization of isobutylene is given below: 
-            </p>
+            <div class="pl-3">
+              <h3><span title="Cationic" data-toggle="tooltip" data-placement="top"> Acid-Catalyzed </span> Polymerization</h3>
 
-            <h3>Anionic Polymerization</h3>
-            
-            <p>
-              The initiator is an anion. <br />
-              <span class="font-weight-bold">Initiation</span> : Begins with an attack by a nucleophilic reagent on one end of a double bond, resulting in the formation of a carbanion  <br />
-              <span class="font-weight-bold">Elongation</span> : Attack by this carbanion on another alkene, results in a larger carbon carbanion, and this process continues, resulting in a higher molecular weight carbanion <br />
-              <span class="font-weight-bold">Termination</span> : The reaction is finished when the addition of any group, such as a proton, is carried out to destroy the carbanion on the other end of the chain <br />
-            
-              Polymerization of styrene is given below: 
-            </p> 
-            
-        
-            <h3>Free Radical Polymerization</h3>
-        
-            <p>
-              The initiator is a peroxide catalyst. <br />
-              <span class="font-weight-bold">Initiation</span> : Requires the formation of two free radicals, which is an uncharged molecule, usually with an unpaired valence electron <br />
-              <span class="font-weight-bold">Elongation</span> : The process continues with the stepwise addition of a free radical to an alkene molecule <br />
-              <span class="font-weight-bold">Termination</span> : The reaction ends with either the combination or the disproportionation of the free radicals <br />
-        
-              Polymerization of ethene is given below: 
-            </p> 
+              <p class="py-2">
+                The initiator is an acid.
+              </p>
+              <p>
+                <span class="font-weight-bold">Initiation</span>: A proton from an acid is added to an alkene in order to form a carbocation <br />
+                <span class="font-weight-bold">Elongation</span>: Another alkene molecule donates an electron group, forming a larger carbocation, and this process continues, resulting in a higher molecular weight carbocation <br />
+                <span class="font-weight-bold">Termination</span>: Occurs with the loss of a proton <br />
+              </p>
+              <p class="py-2">
+                Polymerization of isobutylene is given below: <br /><br />
+                <img src="./images/acid-catalyzed.png">
+              </p>
+
+              <h3>Anionic Polymerization</h3>
+              
+              <p class="py-2">
+                The initiator is an anion.
+              </p>
+              <p>
+                <span class="font-weight-bold">Initiation</span> : Begins with an attack by a nucleophilic reagent on one end of a double bond, resulting in the formation of a carbanion  <br />
+                <span class="font-weight-bold">Elongation</span> : Attack by this carbanion on another alkene, results in a larger carbon carbanion, and this process continues, resulting in a higher molecular weight carbanion <br />
+                <span class="font-weight-bold">Termination</span> : The reaction is finished when the addition of any group, such as a proton, is carried out to destroy the carbanion on the other end of the chain <br />
+              </p>
+              <p class="py-2">
+                Polymerization of styrene is given below: <br /><br />
+                <img src="./images/anionic.png"> 
+              </p> 
+              
+              <h3>Free Radical Polymerization</h3>
           
-            <h3>Coordination Polymerization</h3>
+              <p class="py-2">
+                The initiator is a peroxide catalyst.
+              </p>
+              <p>
+                <span class="font-weight-bold">Initiation</span> : Requires the formation of two free radicals, which is an uncharged molecule, usually with an unpaired valence electron <br />
+                <span class="font-weight-bold">Elongation</span> : The process continues with the stepwise addition of a free radical to an alkene molecule <br />
+                <span class="font-weight-bold">Termination</span> : The reaction ends with either the combination or the disproportionation of the free radicals <br />
+              </p>
+              <p class="py-2">
+                Polymerization of ethene is given below: <br /><br />
+                <img src="./images/free-radical.png">
+              </p> 
             
-            <p>The polymerizations of ethene and propene using either of these processes result in high molecular weight polymers with astounding physical properties. </p>
-      
-            <p>
-              <span class="font-weight-bold">Phillips Petroleum Process</span> 
-              <ul>
-                <li>Polymerization at low atmospheric pressure and temperature</li>
-                <li>Polymerization is achieved with the use of a aluminum-molybdenum oxide catalyst, which needs activation by hydrogen</li>
-              </ul>
-            
-              <span class="font-weight-bold">Ziegler Process</span> 
-              <ul>
-                <li>Polymerization at atmospheric pressure and room temperature </li>
-                <li>Reaction occurs in an alkane solvent that exists in a suspension with the insoluble product from the reaction of triethyl-aluminum and titanium tetrachloride (which is also known as the Ziegler-Natta catalyst) </li>
-                <li>Copolymers of ethene and propene made using this process are highly elastic and called elastomers </li>
-                <li>Polymerization of propene using this process can be used to create durable fibers and molded into various shapes </li>
-              </ul>
-            </p>    
+              <h3>Coordination Polymerization</h3>
+              
+              <p class="py-2">
+                The polymerizations of ethene and propene using either of these processes result in high molecular weight polymers with astounding physical properties. 
+              </p>
+        
+              <p>
+                <span class="font-weight-bold">Phillips Petroleum Process</span> 
+                <ul>
+                  <li>Polymerization at low atmospheric pressure and temperature</li>
+                  <li>Polymerization is achieved with the use of a aluminum-molybdenum oxide catalyst, which needs activation by hydrogen</li>
+                </ul>
+              
+                <span class="font-weight-bold">Ziegler Process</span> 
+                <ul>
+                  <li>Polymerization at atmospheric pressure and room temperature </li>
+                  <li>Reaction occurs in an alkane solvent that exists in a suspension with the insoluble product from the reaction of triethyl-aluminum and titanium tetrachloride (which is also known as the Ziegler-Natta catalyst) </li>
+                  <li>Copolymers of ethene and propene made using this process are highly elastic and called elastomers </li>
+                  <li>Polymerization of propene using this process can be used to create durable fibers and molded into various shapes </li>
+                </ul>
+              </p>
+            </div>    
           </div>
           <!-- content for "step-growth" -->
           <div class="tab-pane fade" id="v-pills-step-growth" role="tabpanel" aria-labelledby="v-pills-step-growth">
             <h2>Step-Growth Polymerization</h2>
-            <p>
-              <span class="font-italic font-weight-bold" title="Also known as Condensation polymers" data-toggle="tooltip" data-placement="top"> Step-Growth polymers</span> are formed by step-growth polymerization, in which the molecular weight and the length of the chain of the polymer is built up slowly. There is only one reaction mechanism by which the polymers are formed. Bifunctional monomers are required in order for this type of polymerization to occur. The polymerization occurs through the individual reactions of the functional groups of the monomers. Two monomers form a dimer, two dimers form a tetramer, and so on, until a high molecular weight polymer is formed. Ex: formation of Nylon 66
-            </p>
+
+            <div class="row">              
+              <div class="col-12">
+                <img src="./images/nylon-66.png" class="float-right p-1">
+                <p>
+                  <span class="font-italic font-weight-bold" title="Also known as Condensation polymers" data-toggle="tooltip" data-placement="top"> Step-Growth polymers</span> are formed by step-growth polymerization, in which the molecular weight and the length of the chain of the polymer is built up slowly. There is only one reaction mechanism by which the polymers are formed. Bifunctional monomers are required in order for this type of polymerization to occur. The polymerization occurs through the individual reactions of the functional groups of the monomers. Two monomers form a dimer, two dimers form a tetramer, and so on, until a high molecular weight polymer is formed. 
+                </p>
+              </div>
+
+              <div class="col-12">
+                <h3>Copolymers</h3>
+              
+                <p>
+                  Polymers that are made up of two or more repeating units (monomers). Copolymers are commercially important. Different types of copolymers can be made depending on the distribution of the monomers in the unit.
+                </p>
+              </div>
+              <div class="col-12">
+                <img src="./images/copolymers.png" class="float-left pt-4 pr-2">
+                <p>    
+                  <dl>
+                    <dt>Random copolymers</dt>
+                    <dd>The monomers combine together in random sequence</dd>
+                    <dt>Alternating copolymers</dt>
+                    <dd>The monomers are distributed across the copolymer in alternating sequence</dd>
+                    <dt>Block copolymers</dt>
+                    <dd>Blocks of monomer units alternate with each other. Prepared by polymerizing one monomer (as if it were a homopolymer), and then adding an excess of a second monomer to the reaction mix.</dd>
+                    <dt>Graft copolymers</dt>
+                    <dd>Homopolymer chains of one monomer unit are “grafted” onto the homopolymer chain of another monomer unit. Made by gamma irradiation of a complete homopolymer chain in the presence of the second chain, which removes a hydrogen at random points in the homopolymer chain and then allows for polymerization of the second monomer </dd>
+                    <dt></dt>
+                    <dd></dd>
+                  </ul>
+                </p>
+              </div>
+
+            </div>
+            
           </div>
           <!-- content for "sources" -->
           <div class="tab-pane fade" id="v-pills-sources" role="tabpanel" aria-labelledby="v-pills-sources">
