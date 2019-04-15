@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Website Design</title>
+
+    <link rel="stylesheet" href="./css/google-font.css">
+    <link rel="stylesheet" href="./css/themes/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="./js/popper.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+	  <script type="text/javascript">
+      <!--
+		  $(function () {
+		    $('[data-toggle="tooltip"]').tooltip();
+        $('.dropdown-toggle').dropdown();
+		  })
+      //-->
+	  </script>
+
+  </head>
+
+  <body>
+  	<!-- nav bar code -->
+  	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  	  <a class="navbar-brand" href="#">Chemistry</a>
+  	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  	    <span class="navbar-toggler-icon"></span>
+  	  </button>
+  	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  	    <ul class="navbar-nav mr-auto">
+  	      <li class="nav-item">
+  	        <a class="nav-link" href="./Index.html">Home</a>
+  	      </li>
+  	      <li class="nav-item">
+  	        <a class="nav-link" href="./History.html">History</a>
+  	      </li>
+  	      <li class="nav-item">
+  	        <a class="nav-link disabled" href="./Chemistry.html">Chemistry</a>
+  	      </li>
+  	      <li class="nav-item">
+  	        <a class="nav-link" href="./use.html">Use</a>
+  	      </li>
+  	      <li class="nav-item">
+  	        <a class="nav-link" href="./Solutions.html">Solutions</a>
+  	      </li>
+  	    </ul>
+  	  </div>
+  	</nav>
+  
+    <div class="container py-2">
+      <!-- making tab nav -->
+      <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="v-pills-main-tab" data-toggle="tab" href="#v-pills-main" role="tab" aria-controls="v-pills-main" aria-selected="true">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="v-pills-chain-growth-tab" data-toggle="tab" href="#v-pills-chain-growth" role="tab" aria-controls="v-pills-chain-growth" aria-selected="false">Chain-Growth Polymerization</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="v-pills-step-growth-tab" data-toggle="tab" href="#v-pills-step-growth" role="tab" aria-controls="v-pills-step-growth" aria-selected="false">Step-Growth Polymerization</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="v-pills-sources-tab" data-toggle="tab" href="#v-pills-sources" role="tab" aria-controls="v-pills-sources" aria-selected="false">Sources</a>
+        </li>
+      </ul>
+      <div class="row py-4">
+        <!-- content -->
+        <div class="col-12 tab-content" id="v-pills-tabContent">
+          <!-- content for "main" -->
+          <div class="tab-pane fade show active" id="v-pills-main" role="tabpanel" aria-labelledby="v-pills-main">
+            <h1>Chemistry of Plastic Making</h1>
+            
+            <p>In a polymerization reaction, monomers are linked together in order to form large polymer chains</p>
+            
+            <p><span class="font-weight-bold">Homopolymers</span> : Polymers that are made up of <span class="font-italic font-weight-bold" title="identical repeating units" data-toggle="tooltip" data-placement="top"> monomers </span>
+            </p>
+
+            <p><span class="font-weight-bold">Copolymers</span> : Polymers that are made up of two or more monomers. Can only be made using step-growth polymerization</p>
+          
+          </div>
+          <!-- content for "chain-growth" -->
+          <div class="tab-pane fade" id="v-pills-chain-growth" role="tabpanel" aria-labelledby="v-pills-chain-growth">
+            <h2>Chain-Growth Polymerization</h2>
+            
+            <p>
+              <span class="font-italic font-weight-bold" title="Also known as Addition polymers" data-toggle="tooltip" data-placement="top"> Chain-Growth polymers</span> are created by chain-reaction polymerization in which a reactive intermediate is formed, via an initiator that adds to the carbon-carbon double bond of an unsaturated substrate. This intermediate then reacts with another monomer, and another, and so on, to form a chain. The reaction occurs in three steps: initiation, elongation, and termination.
+            </p>
+            
+            <h3><span title="Cationic" data-toggle="tooltip" data-placement="top"> Acid-Catalyzed </span> Polymerization</h3>
+            
+            <p>
+              The initiator is an acid. <br />
+              <span class="font-weight-bold">Initiation</span>: A proton from an acid is added to an alkene in order to form a carbocation <br />
+              <span class="font-weight-bold">Elongation</span>: Another alkene molecule donates an electron group, forming a larger carbocation, and this process continues, resulting in a higher molecular weight carbocation <br />
+              <span class="font-weight-bold">Termination</span>: Occurs with the loss of a proton <br />
+
+              Polymerization of isobutylene is given below: 
+            </p>
+
+            <h3>Anionic Polymerization</h3>
+            
+            <p>
+              The initiator is an anion. <br />
+              <span class="font-weight-bold">Initiation</span> : Begins with an attack by a nucleophilic reagent on one end of a double bond, resulting in the formation of a carbanion  <br />
+              <span class="font-weight-bold">Elongation</span> : Attack by this carbanion on another alkene, results in a larger carbon carbanion, and this process continues, resulting in a higher molecular weight carbanion <br />
+              <span class="font-weight-bold">Termination</span> : The reaction is finished when the addition of any group, such as a proton, is carried out to destroy the carbanion on the other end of the chain <br />
+            
+              Polymerization of styrene is given below: 
+            </p> 
+            
+        
+            <h3>Free Radical Polymerization</h3>
+        
+            <p>
+              The initiator is a peroxide catalyst. <br />
+              <span class="font-weight-bold">Initiation</span> : Requires the formation of two free radicals, which is an uncharged molecule, usually with an unpaired valence electron <br />
+              <span class="font-weight-bold">Elongation</span> : The process continues with the stepwise addition of a free radical to an alkene molecule <br />
+              <span class="font-weight-bold">Termination</span> : The reaction ends with either the combination or the disproportionation of the free radicals <br />
+        
+              Polymerization of ethene is given below: 
+            </p> 
+          
+            <h3>Coordination Polymerization</h3>
+            
+            <p>The polymerizations of ethene and propene using either of these processes result in high molecular weight polymers with astounding physical properties. </p>
+      
+            <p>
+              <span class="font-weight-bold">Phillips Petroleum Process</span> 
+              <ul>
+                <li>Polymerization at low atmospheric pressure and temperature</li>
+                <li>Polymerization is achieved with the use of a aluminum-molybdenum oxide catalyst, which needs activation by hydrogen</li>
+              </ul>
+            
+              <span class="font-weight-bold">Ziegler Process</span> 
+              <ul>
+                <li>Polymerization at atmospheric pressure and room temperature </li>
+                <li>Reaction occurs in an alkane solvent that exists in a suspension with the insoluble product from the reaction of triethyl-aluminum and titanium tetrachloride (which is also known as the Ziegler-Natta catalyst) </li>
+                <li>Copolymers of ethene and propene made using this process are highly elastic and called elastomers </li>
+                <li>Polymerization of propene using this process can be used to create durable fibers and molded into various shapes </li>
+              </ul>
+            </p>    
+          </div>
+          <!-- content for "step-growth" -->
+          <div class="tab-pane fade" id="v-pills-step-growth" role="tabpanel" aria-labelledby="v-pills-step-growth">
+            <h2>Step-Growth Polymerization</h2>
+            <p>
+              <span class="font-italic font-weight-bold" title="Also known as Condensation polymers" data-toggle="tooltip" data-placement="top"> Step-Growth polymers</span> are formed by step-growth polymerization, in which the molecular weight and the length of the chain of the polymer is built up slowly. There is only one reaction mechanism by which the polymers are formed. Bifunctional monomers are required in order for this type of polymerization to occur. The polymerization occurs through the individual reactions of the functional groups of the monomers. Two monomers form a dimer, two dimers form a tetramer, and so on, until a high molecular weight polymer is formed. Ex: formation of Nylon 66
+            </p>
+          </div>
+          <!-- content for "sources" -->
+          <div class="tab-pane fade" id="v-pills-sources" role="tabpanel" aria-labelledby="v-pills-sources">
+            <h2>Sources</h2>
+            
+            <p>Libretexts. "10.8: Polymerization of Alkenes." Chemistry LibreTexts, Libretexts, 23 Feb. 2019, <a href="http://chem.libretexts.org/Bookshelves/Organic_Chemistry/Book:_Basic_Principles_of_Organic_Chemistry_(Roberts_and_Caserio)/10:_Alkenes_and_Alkynes_I_-_Ionic_and_Radical_Addition_Reactions/10.8:_Polymerization_of_Alkenes">chem.libretexts.org/Bookshelves/Organic_Chemistry/Book:_Basic_Principles_of_Organic_Chemistry_(Roberts_and_Caserio)/10:_Alkenes_and_Alkynes_I_-_Ionic_and_Radical_Addition_Reactions/10.8:_Polymerization_of_Alkenes</a>a>.</p>
+
+            <p>Stille, J.K. "Step Growth Polymerization." Journal of Chemical Education, Colorado, Colorado State University, 1981, pg 862-866</p>
+
+            <p>McMurry, John "Chapter 31: Synthetic Polymers" Organic Chemistry, Edition 6, Belmont, California, Thompson Learning, 2004, pg 1159-1167</p>
+
+            <p>Bishop, Mark. Addition Polymers, preparatorychemistry.com/Bishop_Addition_Polymers.htm.</p>
+
+            <p>
+              "Zum Directory-Modus." Chemgapedia, <a href="http://www.chemgapedia.de/vsengine/vlu/vsc/en/ch/12/oc/vlu_organik/alkene/indust_bedeut_alkene.vlu/Page/vsc/en/ch/12/oc/alkene/d_o_p_von_alkenen/d_o_p_von_alkenen.vscml.html">www.chemgapedia.de/vsengine/vlu/vsc/en/ch/12/oc/vlu_organik/alkene/indust_bedeut_alkene.vlu/Page/vsc/en/ch/12/oc/alkene/d_o_p_von_alkenen/d_o_p_von_alkenen.vscml.html</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
